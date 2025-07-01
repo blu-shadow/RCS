@@ -1,150 +1,156 @@
-<!DOCTYPE html>
-<html lang="bn">
+<!DOCTYPE html><html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BNSCC Red Crescent Society</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>কম্পিউটার নেটওয়ার্ক</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #d32f2f;
-      --secondary: #0d47a1;
-      --bg: #f9f9f9;
-      --dark: #1a1a1a;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-
     body {
-      margin: 0;
       font-family: 'Noto Sans Bengali', sans-serif;
-      background-color: var(--bg);
-      color: var(--dark);
+      background: #f0f4f8;
+      color: #222;
+      line-height: 1.7;
     }
-
     header {
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
-      padding: 30px 20px;
-      text-align: center;
+      background: linear-gradient(to right, #004080, #0073e6);
       color: white;
-      position: relative;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
-
-    header img {
-      height: 120px;
-      margin-bottom: 10px;
-    }
-
     header h1 {
-      font-size: 36px;
-      margin: 10px 0 5px;
+      font-size: 2.5rem;
     }
-
     header p {
-      font-size: 18px;
-      margin: 0;
+      font-size: 1.2rem;
+      margin-top: 10px;
     }
-
     nav {
+      background: #0066cc;
       display: flex;
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 8px 5px;
-  gap: 8px;
-}
-
-nav a {
-  flex: 0 0 auto;
-  padding: 8px 14px;
-  background-color: #e3f2fd;
-  color: var(--secondary);
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 25px;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.05);
-}
-
-nav a:hover {
-  background-color: var(--secondary);
-  color: white;
-  transform: scale(1.02);
-}
-
-    .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: url('https://www.transparenttextures.com/patterns/light-wool.png'), linear-gradient(to right, #ffffff, #e0f7fa);
+      justify-content: center;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
-    .hero h2 {
-      font-size: 42px;
-      color: var(--primary);
-      margin-bottom: 20px;
+    nav a {
+      color: white;
+      margin: 0 20px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
     }
-
-    .hero p {
-      font-size: 20px;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.8;
+    nav a:hover {
+      color: #ffcc00;
     }
-
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #004080;
+      margin-bottom: 15px;
+      padding-top: 25px;
+      border-bottom: 2px solid #0073e6;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 25px;
+    }
+    ul li {
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
     footer {
-      background-color: var(--secondary);
+      background: #004080;
       color: white;
       text-align: center;
-      padding: 25px 10px;
-      font-size: 16px;
-      margin-top: 60px;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.95rem;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 28px;
-      }
-      .hero h2 {
-        font-size: 32px;
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
       }
       nav a {
-        padding: 12px 15px;
-        font-size: 15px;
+        margin: 10px;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="BNSCC Logo">
-    <h1>বাংলাদেশ নেভি স্কুল রেড ক্রিসেন্ট ইউনিট</h1>
-    <p>“মানবতার জন্য, সেবায় অঙ্গীকার”</p>
-  </header>
-
-  <nav>
-    <a href="committee.html">কমিটি</a>
-    <a href="notice.html">নোটিশ বোর্ড</a>
-    <a href="events.html">ইভেন্টস</a>
-    <a href="photos.html">ছবি</a>
-    <a href="videos.html">ভিডিও</a>
-  </nav>
-
-  <section class="hero">
-    <h2>স্বাগতম আমাদের ওয়েবসাইটে</h2>
-    <p>
-      BNSCC Red Crescent Society একটি মানবিক, অরাজনৈতিক ও স্বেচ্ছাসেবী ছাত্র সংগঠন যা দেশের সংকটকালীন সময়ে সহায়তায় অগ্রণী ভূমিকা পালন করে। আমাদের শিক্ষার্থীরা নেতৃত্ব, সহানুভূতি ও সমাজসেবায় প্রশিক্ষিত হয়। আপনার অংশগ্রহণে আমরা আরও মানবিক সমাজ গড়ে তুলতে পারব।
-    </p>
-  </section>
-
-  <footer>
-    &copy; ২০২৫ BNSCC Red Crescent Society | ডিজাইন করেছে ChatGPT-এর সহায়তায়
+    <h1>কম্পিউটার নেটওয়ার্ক</h1>
+    <p>কম্পিউটার নেটওয়ার্ক সম্পর্কিত সম্পূর্ণ ও বিস্তারিত তথ্য</p>
+  </header>  <nav>
+    <a href="#basic">মূল ধারণা</a>
+    <a href="#topology">টপোলজি</a>
+    <a href="#uses">ব্যবহার</a>
+    <a href="#devices">নেটওয়ার্ক যন্ত্র</a>
+    <a href="#media">ট্রান্সমিশন মাধ্যম</a>
+  </nav>  <section id="basic">
+    <h2>মূল ধারণা</h2>
+    <ul>
+      <li><strong>সার্ভার:</strong> একটি শক্তিশালী কম্পিউটার যা অন্যান্য কম্পিউটার (ক্লায়েন্ট) এর কাছে তথ্য, ফাইল বা পরিষেবা সরবরাহ করে।</li>
+      <li><strong>ক্লায়েন্ট:</strong> ব্যবহারকারীর কম্পিউটার বা ডিভাইস, যা সার্ভার থেকে পরিষেবা গ্রহণ করে।</li>
+      <li><strong>মিডিয়া:</strong> নেটওয়ার্কে ডেটা স্থানান্তরের জন্য ব্যবহৃত মাধ্যম যেমন কেবল, ফাইবার অপটিক বা বেতার তরঙ্গ।</li>
+      <li><strong>নেটওয়ার্ক অ্যাডাপ্টার (LAN Card):</strong> কম্পিউটারকে নেটওয়ার্কের সাথে সংযুক্ত করার জন্য ব্যবহৃত হার্ডওয়্যার।</li>
+      <li><strong>রিসোর্স:</strong> যে কোনো তথ্য বা ডিভাইস যা নেটওয়ার্কের মাধ্যমে শেয়ার করা যায় (যেমনঃ ফাইল, প্রিন্টার, ইন্টারনেট)।</li>
+      <li><strong>ব্যবহারকারী:</strong> যিনি নেটওয়ার্কের রিসোর্স ব্যবহার করেন।</li>
+      <li><strong>প্রোটোকল:</strong> নেটওয়ার্কে ডিভাইসগুলোর মধ্যে যোগাযোগের নিয়মাবলী। যেমনঃ TCP/IP, HTTP, FTP ইত্যাদি।</li>
+    </ul>
+  </section>  <section id="topology">
+    <h2>নেটওয়ার্ক টপোলজি</h2>
+    <p>নেটওয়ার্ক টপোলজি হল কম্পিউটারগুলোর মধ্যে সংযোগের কাঠামো বা বিন্যাস। এটি দুই ধরনের হতে পারে: <strong>ফিজিক্যাল</strong> (বাস্তব সংযোগ) ও <strong>লজিক্যাল</strong> (ডেটা প্রবাহের পথ)।</p>
+    <ul>
+      <li><strong>বাস টপোলজি:</strong> সব ডিভাইস একটি একক তারে যুক্ত থাকে। সহজ এবং খরচ কম, কিন্তু তারে সমস্যা হলে পুরো নেটওয়ার্ক বন্ধ হয়ে যেতে পারে।</li>
+      <li><strong>রিং টপোলজি:</strong> প্রত্যেক ডিভাইস দুই পাশে দুটি ডিভাইসের সাথে যুক্ত থাকে, একটি চক্রাকার রিং তৈরি করে। ডেটা একদিকে ঘোরে।</li>
+      <li><strong>স্টার টপোলজি:</strong> সব ডিভাইস একটি কেন্দ্রীয় হাব বা সুইচের সাথে যুক্ত থাকে। একটি ডিভাইস নষ্ট হলেও অন্যগুলো চালু থাকে। এটি সবচেয়ে জনপ্রিয় টপোলজি।</li>
+      <li><strong>ট্রি টপোলজি:</strong> স্টার এবং বাস টপোলজির সংমিশ্রণ। এটি অনেক ডিভাইস সংযুক্ত করার জন্য উপযুক্ত।</li>
+      <li><strong>মেশ টপোলজি:</strong> প্রতিটি ডিভাইস অন্য সব ডিভাইসের সাথে সরাসরি সংযুক্ত থাকে। উচ্চ নির্ভরযোগ্যতা, কিন্তু ব্যয়বহুল।</li>
+      <li><strong>হাইব্রিড টপোলজি:</strong> একাধিক টপোলজির মিশ্রণ। বড় ও জটিল নেটওয়ার্ক তৈরিতে ব্যবহৃত হয়।</li>
+    </ul>
+  </section>  <section id="uses">
+    <h2>কম্পিউটার নেটওয়ার্কের ব্যবহার</h2>
+    <ul>
+      <li>ফাইল, প্রিন্টার এবং ইন্টারনেট শেয়ার করা।</li>
+      <li>ইমেইল, চ্যাট এবং ভিডিও কলের মাধ্যমে যোগাযোগ।</li>
+      <li>ডেটা ব্যাকআপ ও পুনরুদ্ধার।</li>
+      <li>দূরবর্তী স্থান থেকে সফটওয়্যার ও সেবা ব্যবহার।</li>
+      <li>অনলাইন শিক্ষা ও সহযোগিতামূলক কাজ।</li>
+      <li>অনলাইন ব্যাংকিং, ই-কমার্স ও ব্যবসায়িক কার্যক্রম।</li>
+    </ul>
+  </section>  <section id="devices">
+    <h2>নেটওয়ার্ক যন্ত্র</h2>
+    <ul>
+      <li><strong>হাব:</strong> একটি সাধারণ ডিভাইস যা অনেকগুলো কম্পিউটারকে সংযুক্ত করে এবং একই ডেটা সব ডিভাইসে পাঠায়।</li>
+      <li><strong>সুইচ:</strong> হাবের তুলনায় স্মার্ট। নির্দিষ্ট ডিভাইসে নির্দিষ্ট ডেটা পাঠায়।</li>
+      <li><strong>রাউটার:</strong> একাধিক নেটওয়ার্ক (যেমনঃ আপনার বাসার ও ইন্টারনেট) এর মধ্যে সংযোগ স্থাপন করে।</li>
+      <li><strong>মোডেম:</strong> ডিজিটাল সিগনালকে অ্যানালগ এবং অ্যানালগকে ডিজিটালে রূপান্তর করে। ইন্টারনেট সংযোগের জন্য ব্যবহৃত হয়।</li>
+      <li><strong>LAN কার্ড:</strong> একটি হার্ডওয়্যার যা কম্পিউটারকে স্থানীয় নেটওয়ার্কের সাথে সংযুক্ত করে।</li>
+    </ul>
+  </section>  <section id="media">
+    <h2>ট্রান্সমিশন মাধ্যম</h2>
+    <ul>
+      <li><strong>স্যাটেলাইট:</strong> পৃথিবীর কক্ষপথে স্থাপিত ডিভাইস যা অনেক দূরের স্থানে দ্রুত যোগাযোগ করতে সাহায্য করে। গ্রামাঞ্চলে ইন্টারনেট পৌঁছে দিতে ব্যবহৃত হয়।</li>
+      <li><strong>অপটিক্যাল ফাইবার:</strong> কাচের তৈরি তার যার মাধ্যমে আলো ব্যবহার করে উচ্চগতির ডেটা পাঠানো হয়। এটি দ্রুত ও নির্ভরযোগ্য।</li>
+    </ul>
+  </section>  <footer>
+    <p>&copy; ২০২৫ কম্পিউটার নেটওয়ার্ক ওয়েবসাইট | সর্বস্বত্ব সংরক্ষিত</p>
   </footer>
-
 </body>
 </html>
